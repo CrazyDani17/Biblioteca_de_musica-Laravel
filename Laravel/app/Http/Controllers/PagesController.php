@@ -152,6 +152,14 @@ class PagesController extends Controller
         return back()->with('mensaje', 'Cancion Eliminada');
     }
 
+    public function artista_delete($id){
+
+        $artista = App\Artista::findOrFail($id);
+        $artista->delete();
+    
+        return back()->with('mensaje', 'Artista Eliminado');
+    }
+
     public function playlists(){
         $playlists = App\Playlist::all();
         return view('playlists',compact('playlists'));

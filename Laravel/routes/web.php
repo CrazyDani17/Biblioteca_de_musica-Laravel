@@ -78,7 +78,7 @@ Route::get('artistas/editar_artista/{id}','PagesController@editar_artista')->nam
 
 Route::put('artistas/editar_artista/{id}','PagesController@artista_update')->name('artista.update');
 
-Route::delete('artistas/eliminar_artista/{id}','PagesController@cancion_delete')->name('artista.eliminar');
+Route::delete('artistas/eliminar_artista/{id}','PagesController@artista_delete')->name('artista.eliminar');
 
 /*-----------------------------Cancion-Playlist----------------------------------*/
 
